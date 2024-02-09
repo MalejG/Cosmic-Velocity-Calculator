@@ -3,11 +3,8 @@
 
 #pragma message ("CosmicVelocityCalculator.h has been included.")
 
-//Function for test simple hello world
-void SayHello();
-
 //Function Orbital Velocity
-double firstCosmicVelocity();
+double firstCosmicVelocity(double mass, double radiusObject);
 
 //Function Escape Velocity
 double secondCosmicVelocity();
