@@ -21,9 +21,19 @@ double firstCosmicVelocity(double mass, double radiusObject)
 }
 
 
-double secondCosmicVelocity() 
+double secondCosmicVelocity(double mass, double radiusObject)
 {
-    cout << "Escape Velocity!\n";
+    cout << "Second Cosmic Velocity (Escape Velocity)\n";
+
+    const double gravitationalConstant = 6.674 * pow(10, (-11));
+
+    double radius = radiusObject * 1000; // convert to meters
+    mass = mass * pow(10, 24); //yottagrams to kilograms
+
+    double orbitalSpeed = sqrt((2 * gravitationalConstant * mass) / (radius));
+
+    return orbitalSpeed / 1000; //to km/s
+
     return 0;
 }
 

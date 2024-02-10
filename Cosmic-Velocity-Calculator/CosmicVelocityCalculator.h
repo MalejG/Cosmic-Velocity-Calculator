@@ -7,7 +7,7 @@
 double firstCosmicVelocity(double mass, double radiusObject);
 
 //Function Escape Velocity
-double secondCosmicVelocity();
+double secondCosmicVelocity(double mass, double radiusObject);
 
 
 
