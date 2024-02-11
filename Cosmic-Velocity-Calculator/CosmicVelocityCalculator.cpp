@@ -4,16 +4,13 @@
 
 using namespace std;
 
-// For now only OUTPUT will be orbital velocity for 200 km (function will be expended for variable heights)
-double firstCosmicVelocity(double mass, double radiusObject)
+
+double firstCosmicVelocity(double mass, double radiusObject,const int *orbit)
 {
-    cout << "\nFirst Cosmic Velocity!(Orbital velocity)\n";
+    const double gravitationalConstant = 6.6743 * pow(10, ( -11));
+    double radius = (radiusObject + *orbit) * 1000; // convert to meters
     
-    const double gravitationalConstant = 6.674 * pow(10, ( -11));
-    const double orbita = 200; //orbita 200 km
-    
-    double radius = (radiusObject + orbita) * 1000; // convert to meters
-    mass = mass * pow(10, 24); //yottagrams to kilograms
+    mass = mass * pow(10, 21); //yottagrams to kilograms
 
     double orbitalSpeed = sqrt((gravitationalConstant * mass)/(radius));
 
@@ -23,18 +20,12 @@ double firstCosmicVelocity(double mass, double radiusObject)
 
 double secondCosmicVelocity(double mass, double radiusObject)
 {
-    cout << "Second Cosmic Velocity (Escape Velocity)\n";
-
-    const double gravitationalConstant = 6.674 * pow(10, (-11));
+    const double gravitationalConstant = 6.6743 * pow(10, (-11));
 
     double radius = radiusObject * 1000; // convert to meters
-    mass = mass * pow(10, 24); //yottagrams to kilograms
+    mass = mass * pow(10, 21); //yottagrams to kilograms
 
     double orbitalSpeed = sqrt((2 * gravitationalConstant * mass) / (radius));
 
-    return orbitalSpeed / 1000; //to km/s
-
-    return 0;
+    return orbitalSpeed / 1000; //convert to km/s
 }
-
-
