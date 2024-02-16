@@ -9,6 +9,7 @@ double firstCosmicVelocity(double mass, double radiusObject, const int *orbit);
 //Function Escape Velocity
 double secondCosmicVelocity(double mass, double radiusObject);
 
-
+//Function Escape from Center Object Velocity
+double thirdCosmicVelocity(double massObject1, double radiusObject1, double massCenterObject2, double radiusCenterObject2);
 
 #endif //__COSMICVELOCITYCALCULATOR_h__
