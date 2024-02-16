@@ -1,0 +1,429 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
+  <FlowDocument.Tag><![CDATA[{
+  "timestamp": "2024-02-16 03:11:41",
+  "files": {
+    "C:\\Users\\Mal3j\\source\\repos\\Cosmic-Velocity-Calculator\\Cosmic-Velocity-Calculator\\Cosmic-Velocity-Calculator.vcxproj": {
+      "before": "7VlLb+M2EN5zgf6BngQhhZNDLDsJ8mhkLXblbGDUeSDO41JgQUujmF1JFEgqm7Tb/vaOJJKyHHs3RtpkGySHACZnhuTHmW9mqL9/evPGfXubxNYNcEFZ2rO77Y5tQRqwkKbXPTuX0fqu/db78Qf3lLPfIZBWHyKSx/Kc8GuQome/z2kc2hZaSfHXRMrsF8cRwQQSItoJDTgTLJLtgCVOCDcQswy4k4hxoeZsdDqbNlq3LHcgITnkLM+sIRlD3LPVgj5LI3qdcyJxg6ISRvF5s9YgDeI8hJ7dh3F+/eWKppsbWgN1Gqa8UsZ1moPFVoo/9zQmMmI88UojrmN+VxI4UOExT/0bmzuDGIiAb2xPST3HBiv0bre3HosdmvhPkPva1h6M25Kbcx3joZXDogOgK8u7htMexmxM4tpNL33lJ5dVhHndnXbHde4NK6/6Fe4+Mx5WTldouo4eUhLK3GFOQ+/Pvd1uRAjsrG92o876VhBtre+Fnd31aKfT3Y62OyHZG/9lXLXUUWbOGJPHJAGRkQA8nwmM1EsMzoDKO5/EQY7uz7jrNOWUMoZEyD6LigJ0YJgDdooDflWkMFPuqsZPcUCSMS4tdcaevbJ66SuiOSVysvbbkeETP8vaioraGd6EsC1n3r1gfIa0oI6e3VpZbUTr2peVVb37tVav15pijZataaihogOiSSXndxl477IspkHJUjMxW04r6C4ElKsM6ZgTTkF4kufgOvfHlYLe4DljsQDp3XS3NuuY0qNK2J8QTgIJfISSFylFGkfbjdGF2CPo9XVYy8DW4LOnAy7COPvXkLuasBgQgmtOkpNM0oT+UV6lup6F088KvOHppwP95Xgr0v/TwfZSfHWwHEE3iblSbqTLg1sJaVF5ImFJrDhV4sRcWy5Uyk6nhobyCNkOwoqSH6ahOW40Aaxd7aVYrpEcyj1hEruPBxI5L5Jmn/LZdDWVbdo5ium8NcW1cEuFFKuYqZa201ozKWvIAhJjPuoTSXT+MOnxQdA+BqiZdPAKleleFhQcJRO9wrQYJu1RLw8oHWcNXitC/4gUjbMJ2qL1wGqXpmUpW0lP0cZyla12NT/2WZLRGNQA8tkV4SnS8LBo1L3yPxabjcGq4EHRUX/oTyD4pCok89MInHJA/g9ACMbrvQvvanC8ubH/sX/w/uJw/6N/cjw6GR7s/7y6QH6t6BTmWzJLFTU69uokDeAIS161pdlRVas5s+d2hzT9VGMwysejO4GAY1uUCiwLXaceMkseQgr4JlFV84Nq+aLNUGsvnNabMGtWfWUN0HTOe+St67gpnzBade/yqHv/kKdBcdDSO4pToL+oQ8+dMogNUskpJvtAi+neZ86EUTJuVRWe5qcRWOQblZcd/8+97CAl4xj8k6P+u/MPLC4e5RTW82YMKKqDgTOIgONrnmkz50wYpYUuW0G/cLoy4DpP4dFTHc8zs9grfynOfAL+auT9WfZeLmtp7vnO2euVt74/3qoTM7qc8cL6m8OiR9R2kGW6kJuvmRCaTktVIVWvV38bqUlPfep4wPITvfh9s8t187L65GPMTfXo+rHU9PPq1XZ+c25epL1/AA==",
+      "after": "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"
+    }
+  }
+}]]></FlowDocument.Tag>
+  <Section Margin="0,24" TextAlignment="Center">
+    <Paragraph FontSize="24" FontWeight="Bold" Margin="12,0">
+      <LineBreak />
+      <Span Foreground="Gray">Qt Visual Studio Tools</Span>
+    </Paragraph>
+    <Paragraph FontSize="42" Margin="12,0" FontWeight="Bold">
+      <Span TextDecorations="Underline">Project Format Conversion</Span>
+    </Paragraph>
+    <Paragraph Margin="12,8" FontSize="18">
+      <Span>Report generated on 2024-02-16 03:11:41</Span>
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Files</Span>
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Changes</Span>
+    </Paragraph>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Enabling multi-processor compilation]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Project format version]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Keyword>QtVS_v304</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Fallback for QTMSBUILD environment variable]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Default Qt properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt build settings]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Warn if Qt/MSBuild is not found]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </Target>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt property sheet]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt targets]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mal3j\source\repos\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator\Cosmic-Velocity-Calculator.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+  </Section>
+  <Section>
+    <Paragraph />
+  </Section>
+</FlowDocument>
+<!--3rqqTFfZdCRDahg+gvKy8En9esvq+XszKi1Fz0Zu56g=-->
