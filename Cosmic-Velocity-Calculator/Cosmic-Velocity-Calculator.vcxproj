@@ -162,6 +162,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CosmicVelocityCalculator.h" />
+    <ClInclude Include="ui_Widget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Widget.ui" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />
