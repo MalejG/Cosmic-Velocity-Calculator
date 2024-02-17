@@ -3,9 +3,39 @@
 #include "CosmicVelocityCalculator.h"
 #include <iomanip>
 
+#include <QPushButton>
+#include <QApplication>
+#include <QWidget>
+#include "ui_Widget.h"
+
 using namespace std;
 
-int main()
+int test(int argc, char** argv) 
+{
+    QApplication app(argc, argv);
+    auto myWindow = new QWidget();
+    auto myButton = new QPushButton(myWindow);
+    myWindow->show();
+    return app.exec();
+}
+
+
+int main(int argc, char** argv)
+{
+    QApplication app(argc, argv);
+
+    QWidget mainWidget;
+
+    Ui::Form ui;
+    ui.setupUi(&mainWidget);
+
+    mainWidget.show();
+
+    return app.exec();
+}
+
+
+int oldProject()
 {
     double mass = 1;
     double radiusObject = 1;

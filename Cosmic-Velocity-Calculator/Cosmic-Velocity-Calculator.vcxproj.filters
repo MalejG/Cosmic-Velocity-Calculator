@@ -26,5 +26,11 @@
     <ClInclude Include="CosmicVelocityCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ui_Widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Widget.ui" />
   </ItemGroup>
 </Project>
