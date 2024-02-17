@@ -21,10 +21,24 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CosmicVelocityUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CosmicVelocityCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ui_Widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Widget.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="CosmicVelocityUI.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>
