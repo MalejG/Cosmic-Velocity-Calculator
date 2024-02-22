@@ -177,7 +177,7 @@ public:
         label_15->setGeometry(QRect(70, 90, 171, 16));
         label_10000 = new QLabel(groupBox_4);
         label_10000->setObjectName("label_10000");
-        label_10000->setGeometry(QRect(20, 90, 41, 16));
+		label_10000->setGeometry(QRect(20, 90, 41, 16));
         label_17 = new QLabel(groupBox_4);
         label_17->setObjectName("label_17");
         label_17->setGeometry(QRect(70, 110, 171, 16));
@@ -186,16 +186,16 @@ public:
         label_100000->setGeometry(QRect(20, 110, 41, 16));
         label_19 = new QLabel(groupBox_4);
         label_19->setObjectName("label_19");
-        label_19->setGeometry(QRect(250, 90, 131, 16));
+        label_19->setGeometry(QRect(250, 30, 131, 16));
         label_20 = new QLabel(groupBox_4);
         label_20->setObjectName("label_20");
-        label_20->setGeometry(QRect(250, 30, 131, 16));
+        label_20->setGeometry(QRect(250, 50, 131, 16));
         label_21 = new QLabel(groupBox_4);
         label_21->setObjectName("label_21");
-        label_21->setGeometry(QRect(250, 50, 131, 16));
+        label_21->setGeometry(QRect(250, 70, 131, 16));
         label_22 = new QLabel(groupBox_4);
         label_22->setObjectName("label_22");
-        label_22->setGeometry(QRect(250, 70, 131, 16));
+        label_22->setGeometry(QRect(250, 90, 131, 16));
         label_23 = new QLabel(groupBox_4);
         label_23->setObjectName("label_23");
         label_23->setGeometry(QRect(250, 110, 131, 16));
@@ -244,8 +244,8 @@ public:
         radioButton_8->setText(QCoreApplication::translate("Form", "Own", nullptr));
         label->setText(QCoreApplication::translate("Form", "Mass [Yg]", nullptr));
         label_2->setText(QCoreApplication::translate("Form", "Radius [km]", nullptr));
-        radioButton_12->setText(QCoreApplication::translate("Form", "Sagittarius A*", nullptr));
-        radioButton_13->setText(QCoreApplication::translate("Form", "Proxima Centauri System", nullptr));
+        radioButton_12->setText(QCoreApplication::translate("Form", "Sagittarius A* ~", nullptr));
+        radioButton_13->setText(QCoreApplication::translate("Form", "Proxima Centauri System ~", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("Form", "Results", nullptr));
         groupBox_4->setTitle(QCoreApplication::translate("Form", "First cosmic velocity (orbital velocity)", nullptr));
         label_5->setText(QCoreApplication::translate("Form", "km above the object surface:", nullptr));
@@ -258,17 +258,17 @@ public:
         label_10000->setText(QCoreApplication::translate("Form", "10 000", nullptr));
         label_17->setText(QCoreApplication::translate("Form", "km above the object surface:", nullptr));
         label_100000->setText(QCoreApplication::translate("Form", "100 000", nullptr));
-        label_19->setText(QCoreApplication::translate("Form", "1111.11 km/s", nullptr));
-        label_20->setText(QCoreApplication::translate("Form", "1111.11 km/s", nullptr));
-        label_21->setText(QCoreApplication::translate("Form", "1111.11 km/s", nullptr));
-        label_22->setText(QCoreApplication::translate("Form", "1111.11 km/s", nullptr));
-        label_23->setText(QCoreApplication::translate("Form", "1111.11 km/s", nullptr));
+        label_19->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
+        label_20->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
+        label_21->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
+        label_22->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
+        label_23->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
         groupBox_5->setTitle(QCoreApplication::translate("Form", "Second cosmic velocity (escape velocity)", nullptr));
         label_8->setText(QCoreApplication::translate("Form", "Min. escape velocity from surface of the object:", nullptr));
-        label_11->setText(QCoreApplication::translate("Form", "1111.22 km/s", nullptr));
+        label_11->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
         groupBox_6->setTitle(QCoreApplication::translate("Form", "Third cosmic velocity (solar system escape velocity)", nullptr));
         label_9->setText(QCoreApplication::translate("Form", "Min. system escape velocity from surface of the object:", nullptr));
-        label_24->setText(QCoreApplication::translate("Form", "1111.22 km/s", nullptr));
+        label_24->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
     } // retranslateUi
 
 };

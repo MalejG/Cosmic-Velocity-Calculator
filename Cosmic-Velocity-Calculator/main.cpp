@@ -20,18 +20,3 @@ int main(int argc, char** argv)
 
     return app.exec();
 }
-
-int m(int argc, char** argv)
-{
-    QApplication app(argc, argv);
-
-    QWidget mainWidget;
-
-    Ui::Form ui;
-    ui.setupUi(&mainWidget);
-
-    mainWidget.show();
-
-    return app.exec();
-}
-

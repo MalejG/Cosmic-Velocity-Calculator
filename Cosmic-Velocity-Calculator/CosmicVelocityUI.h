@@ -6,24 +6,20 @@
 
 #pragma message ("CosmicVelocityUI.h has been included.")
 
-
 class MyWidget : public QWidget
 {
-    Q_OBJECT
+	Q_OBJECT
 
 public:
-    explicit MyWidget(QWidget* parent = nullptr);
+	explicit MyWidget(QWidget* parent = nullptr);
 
 private slots:
-    void onCalculateButtonClicked();
-    void onRadioButtonSelectedCenterObject();
-    void onRadioButtonSelectedObject();
+	void onCalculateButtonClicked();
+	void onRadioButtonSelectedCenterObject();
+	void onRadioButtonSelectedObject();
 
 private:
-    Ui::Form ui;
-
+	Ui::Form ui;
 };
-
-
 
 #endif __COSMICVELOCITYUI_h__
