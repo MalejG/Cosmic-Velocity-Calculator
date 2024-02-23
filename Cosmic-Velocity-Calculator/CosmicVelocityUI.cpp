@@ -105,48 +105,57 @@ void MyWidget::onRadioButtonSelectedObject()
 		cout << "Mercury";
 		*mass = 3302;
 		*radius = 2439;
+		*distanceObjects = 0.39;
+
 	}
 	else if (ui.radioButton_2->isChecked())
 	{
 		cout << "Venus";
 		*mass = 4868.5;
 		*radius = 6052;
+		*distanceObjects = 0.72;
 	}
 	else if (ui.radioButton_3->isChecked())
 	{
 		cout << "Earth";
 		*mass = 5974,2;
 		*radius = 6378;
+		*distanceObjects = 1;
 	}
 	else if (ui.radioButton_4->isChecked())
 	{
 		cout << "Mars";
 		*mass = 641.85;
 		*radius = 3397;
+		*distanceObjects = 1.52;
 	}
 	else if (ui.radioButton_5->isChecked())
 	{
 		cout << "Jupiter";
 		*mass = 1899000;
 		*radius = 71398;
+		*distanceObjects = 5.2;
 	}
 	else if (ui.radioButton_6->isChecked())
 	{
 		cout << "Saturn";
 		*mass = 568460;
 		*radius = 60000;
+		*distanceObjects = 9.54;
 	}
 	else if (ui.radioButton_9->isChecked())
 	{
 		cout << "Uranus";
 		*mass = 86832;
 		*radius = 25000;
+		*distanceObjects = 19.22;
 	}
 	else if (ui.radioButton_10->isChecked())
 	{
 		cout << "Neptun";
 		*mass = 102430;
 		*radius = 24300;
+		*distanceObjects = 30.06;
 	}
 
 	else if (ui.radioButton_11->isChecked())
@@ -168,7 +177,7 @@ void MyWidget::onCalculateButtonClicked()
 {
 	//FirstCosmicVelocity
 	constexpr size_t n = 5;
-	int orbits[n] = { 200, 500, 5000, 10000, 100000 };
+	double orbits[n] = { 200, 500, 5000, 10000, 100000 };
 
 	ui.label_19->setText(QString::number(firstCosmicVelocity(*mass, *radius, &orbits[0]), 'f', 2) + " km/s");
 	ui.label_20->setText(QString::number(firstCosmicVelocity(*mass, *radius, &orbits[1]), 'f', 2) + " km/s");

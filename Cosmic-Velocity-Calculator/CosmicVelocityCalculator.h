@@ -4,7 +4,7 @@
 #pragma message ("CosmicVelocityCalculator.h has been included.")
 
 //Function Orbital Velocity
-double firstCosmicVelocity(double mass, double radiusObject, const int *orbit);
+double firstCosmicVelocity(double mass, double radiusObject, const double *orbit);
 
 //Function Escape Velocity
 double secondCosmicVelocity(double mass, double radiusObject);

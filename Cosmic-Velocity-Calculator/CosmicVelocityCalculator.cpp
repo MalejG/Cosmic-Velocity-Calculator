@@ -5,7 +5,7 @@
 using namespace std;
 
 
-double firstCosmicVelocity(double mass, double radiusObject,const int *orbit)
+double firstCosmicVelocity(double mass, double radiusObject,const double *orbit)
 {
     const double gravitationalConstant = 6.6743 * pow(10, ( -11));
     double radius = (radiusObject + *orbit) * 1000; // convert to meters
@@ -32,16 +32,13 @@ double secondCosmicVelocity(double mass, double radiusObject)
 
 double thirdCosmicVelocity(double massObject1, double radiusObject1, double massCenterObject2, double radiusCenterObject2, double AU)
 {
+    const double autokm = AU * 149597871;
 
-    //druha kosmicka rychllost  objektu1
-    const double gravitationalConstant = 6.6743 * pow(10, (-11));
-    //druha kosmicka rychllost  objektu2
+    double centerV1 = secondCosmicVelocity(massCenterObject2, autokm);
+    double centerV2 = firstCosmicVelocity(massCenterObject2, radiusCenterObject2, &autokm);
+    double planetV2 = secondCosmicVelocity(massObject1, radiusObject1);
 
-    // v3 = sqr(v1pla**2 + v2esc**2)
-    double radius = radiusObject1 * 1000; // convert to meters
-    massObject1 = massObject1 * pow(10, 21); //yottagrams to kilograms
+    double v3 = sqrt( pow(planetV2 ,2) + pow((centerV1 - centerV2), 2));
 
-    double orbitalSpeed = sqrt((2 * gravitationalConstant * massObject1) / (radius));
-
-    return orbitalSpeed / 1000; //convert to km/s
+    return v3;
 }
