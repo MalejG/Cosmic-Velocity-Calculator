@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'WidgetYQHTxu.ui'
+** Form generated from reading UI file 'WidgetEwXxeG.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef WIDGETYQHTXU_H
-#define WIDGETYQHTXU_H
+#ifndef WIDGETEWXXEG_H
+#define WIDGETEWXXEG_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -47,6 +47,8 @@ public:
     QLabel *label_2;
     QRadioButton *radioButton_12;
     QRadioButton *radioButton_13;
+    QLabel *label_7;
+    QLineEdit *lineEdit_5;
     QGroupBox *groupBox_3;
     QGroupBox *groupBox_4;
     QLabel *label_5;
@@ -75,13 +77,13 @@ public:
     {
         if (Form->objectName().isEmpty())
             Form->setObjectName("Form");
-        Form->resize(501, 614);
+        Form->resize(501, 616);
         pushButton = new QPushButton(Form);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(170, 220, 158, 24));
+        pushButton->setGeometry(QRect(170, 230, 158, 24));
         groupBox = new QGroupBox(Form);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(250, 20, 241, 191));
+        groupBox->setGeometry(QRect(250, 20, 241, 201));
         radioButton = new QRadioButton(groupBox);
         radioButton->setObjectName("radioButton");
         radioButton->setGeometry(QRect(20, 30, 89, 20));
@@ -123,31 +125,37 @@ public:
         label_3->setGeometry(QRect(150, 130, 71, 16));
         groupBox_2 = new QGroupBox(Form);
         groupBox_2->setObjectName("groupBox_2");
-        groupBox_2->setGeometry(QRect(10, 20, 231, 191));
+        groupBox_2->setGeometry(QRect(10, 20, 231, 201));
         radioButton_7 = new QRadioButton(groupBox_2);
         radioButton_7->setObjectName("radioButton_7");
         radioButton_7->setGeometry(QRect(20, 30, 89, 20));
         radioButton_8 = new QRadioButton(groupBox_2);
         radioButton_8->setObjectName("radioButton_8");
-        radioButton_8->setGeometry(QRect(10, 110, 89, 20));
+        radioButton_8->setGeometry(QRect(10, 90, 89, 20));
         lineEdit_3 = new QLineEdit(groupBox_2);
         lineEdit_3->setObjectName("lineEdit_3");
-        lineEdit_3->setGeometry(QRect(20, 130, 113, 22));
+        lineEdit_3->setGeometry(QRect(20, 110, 113, 22));
         lineEdit_4 = new QLineEdit(groupBox_2);
         lineEdit_4->setObjectName("lineEdit_4");
-        lineEdit_4->setGeometry(QRect(20, 160, 113, 22));
+        lineEdit_4->setGeometry(QRect(20, 140, 113, 22));
         label = new QLabel(groupBox_2);
         label->setObjectName("label");
-        label->setGeometry(QRect(140, 160, 61, 16));
+        label->setGeometry(QRect(140, 140, 61, 16));
         label_2 = new QLabel(groupBox_2);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(140, 130, 71, 16));
+        label_2->setGeometry(QRect(140, 110, 71, 16));
         radioButton_12 = new QRadioButton(groupBox_2);
         radioButton_12->setObjectName("radioButton_12");
         radioButton_12->setGeometry(QRect(20, 50, 101, 20));
         radioButton_13 = new QRadioButton(groupBox_2);
         radioButton_13->setObjectName("radioButton_13");
         radioButton_13->setGeometry(QRect(20, 70, 171, 20));
+        label_7 = new QLabel(groupBox_2);
+        label_7->setObjectName("label_7");
+        label_7->setGeometry(QRect(140, 170, 81, 16));
+        lineEdit_5 = new QLineEdit(groupBox_2);
+        lineEdit_5->setObjectName("lineEdit_5");
+        lineEdit_5->setGeometry(QRect(20, 170, 113, 22));
         groupBox_3 = new QGroupBox(Form);
         groupBox_3->setObjectName("groupBox_3");
         groupBox_3->setGeometry(QRect(10, 250, 481, 351));
@@ -177,7 +185,7 @@ public:
         label_15->setGeometry(QRect(70, 90, 171, 16));
         label_10000 = new QLabel(groupBox_4);
         label_10000->setObjectName("label_10000");
-		label_10000->setGeometry(QRect(20, 90, 41, 16));
+        label_10000->setGeometry(QRect(20, 90, 41, 16));
         label_17 = new QLabel(groupBox_4);
         label_17->setObjectName("label_17");
         label_17->setGeometry(QRect(70, 110, 171, 16));
@@ -244,8 +252,9 @@ public:
         radioButton_8->setText(QCoreApplication::translate("Form", "Own", nullptr));
         label->setText(QCoreApplication::translate("Form", "Mass [Yg]", nullptr));
         label_2->setText(QCoreApplication::translate("Form", "Radius [km]", nullptr));
-        radioButton_12->setText(QCoreApplication::translate("Form", "Sagittarius A* ~", nullptr));
-        radioButton_13->setText(QCoreApplication::translate("Form", "Proxima Centauri System ~", nullptr));
+        radioButton_12->setText(QCoreApplication::translate("Form", "Sagittarius A*", nullptr));
+        radioButton_13->setText(QCoreApplication::translate("Form", "Proxima Centauri System", nullptr));
+        label_7->setText(QCoreApplication::translate("Form", "Distance [AU]", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("Form", "Results", nullptr));
         groupBox_4->setTitle(QCoreApplication::translate("Form", "First cosmic velocity (orbital velocity)", nullptr));
         label_5->setText(QCoreApplication::translate("Form", "km above the object surface:", nullptr));
@@ -258,17 +267,17 @@ public:
         label_10000->setText(QCoreApplication::translate("Form", "10 000", nullptr));
         label_17->setText(QCoreApplication::translate("Form", "km above the object surface:", nullptr));
         label_100000->setText(QCoreApplication::translate("Form", "100 000", nullptr));
-        label_19->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
-        label_20->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
-        label_21->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
-        label_22->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
-        label_23->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
+        label_19->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
+        label_20->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
+        label_21->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
+        label_22->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
+        label_23->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
         groupBox_5->setTitle(QCoreApplication::translate("Form", "Second cosmic velocity (escape velocity)", nullptr));
         label_8->setText(QCoreApplication::translate("Form", "Min. escape velocity from surface of the object:", nullptr));
-        label_11->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
+        label_11->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
         groupBox_6->setTitle(QCoreApplication::translate("Form", "Third cosmic velocity (solar system escape velocity)", nullptr));
         label_9->setText(QCoreApplication::translate("Form", "Min. system escape velocity from surface of the object:", nullptr));
-        label_24->setText(QCoreApplication::translate("Form", "0 km/s", nullptr));
+        label_24->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
     } // retranslateUi
 
 };
@@ -279,4 +288,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // WIDGETYQHTXU_H
+#endif // WIDGETEWXXEG_H

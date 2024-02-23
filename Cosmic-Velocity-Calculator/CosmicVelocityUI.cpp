@@ -11,6 +11,8 @@ using namespace std;
 double* massCenter;
 double* radiusCenter;
 
+double* distanceObjects;
+
 double* mass;
 double* radius;
 
@@ -22,11 +24,13 @@ MyWidget::MyWidget(QWidget* parent) : QWidget(parent)
 
 	mass = new double;
 	radius = new double;
+	distanceObjects = new double;
 	massCenter = new double;
 	radiusCenter = new double;
 
 	*mass = 0.0;
 	*radius = 0.0;
+	*distanceObjects = 0.0;
 	*massCenter = 0.0;
 	*radiusCenter = 0.0;
 
@@ -60,30 +64,33 @@ void MyWidget::onRadioButtonSelectedCenterObject()
 	{
 		cout << "Sun";
 		*massCenter = 1988435000;
-		*radiusCenter = 200;
+		*radiusCenter = 695508;
 	}
 	else if (ui.radioButton_12->isChecked())
 	{
-		cout << "Sagitaruis";
-		*massCenter = 8.0e6;
-		*radiusCenter = 11865;
+		cout << "Sagittarius A*";
+		*massCenter = 8540000000000000;
+		*radiusCenter = 12000000;
 	}
 	else if (ui.radioButton_13->isChecked())
 	{
-		cout << "PROXIMA";
-		*massCenter = 6223801550;
-		*radiusCenter = 5000;
+		cout << "Proxima Centauri";
+		*massCenter = 242800000;
+		*radiusCenter = 107280;
 	}
 	else if (ui.radioButton_8->isChecked())
 	{
-		bool ok1, ok2;
-		double massValue = ui.lineEdit_3->text().toDouble(&ok1);
-		double radiusValue = ui.lineEdit_4->text().toDouble(&ok2);
-		if (ok1 && ok2)
+		bool isFilled1, isFilled2, isFilled3;
+		double massValue = ui.lineEdit_3->text().toDouble(&isFilled1);
+		double radiusValue = ui.lineEdit_4->text().toDouble(&isFilled2);
+		double distanceValue = ui.lineEdit_4->text().toDouble(&isFilled3);
+
+		if (isFilled1 && isFilled2 && isFilled3)
 		{
 			cout << "Own";
 			*massCenter = massValue;
 			*radiusCenter = radiusValue;
+			*distanceObjects = distanceValue;
 		}
 	}
 }
@@ -144,10 +151,10 @@ void MyWidget::onRadioButtonSelectedObject()
 
 	else if (ui.radioButton_11->isChecked())
 	{
-		bool ok1, ok2;
-		double massValue = ui.lineEdit->text().toDouble(&ok1);
-		double radiusValue = ui.lineEdit_2->text().toDouble(&ok2);
-		if (ok1 && ok2)
+		bool isFilled1, isFilled2;
+		double massValue = ui.lineEdit->text().toDouble(&isFilled1);
+		double radiusValue = ui.lineEdit_2->text().toDouble(&isFilled2);
+		if (isFilled1 && isFilled2)
 		{
 			cout << "Own";
 			*mass = massValue;
@@ -159,7 +166,6 @@ void MyWidget::onRadioButtonSelectedObject()
 
 void MyWidget::onCalculateButtonClicked()
 {
-	cout << "hi";
 	//FirstCosmicVelocity
 	constexpr size_t n = 5;
 	int orbits[n] = { 200, 500, 5000, 10000, 100000 };
@@ -173,6 +179,6 @@ void MyWidget::onCalculateButtonClicked()
 	//SecondCosmicVelocity
 	ui.label_11->setText(QString::number(secondCosmicVelocity(*mass, *radius), 'f', 2) + " km/s");
 	//ThirdCosmicVelocity
-	ui.label_24->setText(QString::number(thirdCosmicVelocity(*mass, *radius, *massCenter, *radiusCenter), 'f', 2) + " km/s");
+	ui.label_24->setText(QString::number(thirdCosmicVelocity(*mass, *radius, *massCenter, *radiusCenter, *distanceObjects), 'f', 2) + " km/s");
 }
 
