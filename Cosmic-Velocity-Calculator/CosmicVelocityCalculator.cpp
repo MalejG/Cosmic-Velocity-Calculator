@@ -42,3 +42,8 @@ double thirdCosmicVelocity(double massObject1, double radiusObject1, double mass
 
     return v3;
 }
+
+void exportData()
+{
+    cout << "Data saved in file xy";
+}
