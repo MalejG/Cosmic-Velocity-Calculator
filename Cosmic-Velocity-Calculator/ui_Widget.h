@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'Widgetuykkyq.ui'
+** Form generated from reading UI file 'WidgetGPkuZo.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef WIDGETUYKKYQ_H
-#define WIDGETUYKKYQ_H
+#ifndef WIDGETGPKUZO_H
+#define WIDGETGPKUZO_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -38,6 +38,8 @@ public:
     QLineEdit *lineEdit_2;
     QLabel *label_4;
     QLabel *label_3;
+    QLineEdit *lineEdit_5;
+    QLabel *label_7;
     QGroupBox *groupBox_2;
     QRadioButton *radioButton_7;
     QRadioButton *radioButton_8;
@@ -47,8 +49,6 @@ public:
     QLabel *label_2;
     QRadioButton *radioButton_12;
     QRadioButton *radioButton_13;
-    QLabel *label_7;
-    QLineEdit *lineEdit_5;
     QGroupBox *groupBox_3;
     QGroupBox *groupBox_4;
     QLabel *label_5;
@@ -79,13 +79,13 @@ public:
     {
         if (Form->objectName().isEmpty())
             Form->setObjectName("Form");
-        Form->resize(501, 654);
+        Form->resize(501, 723);
         pushButton = new QPushButton(Form);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(170, 230, 158, 24));
+        pushButton->setGeometry(QRect(170, 270, 158, 24));
         groupBox = new QGroupBox(Form);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(250, 20, 241, 201));
+        groupBox->setGeometry(QRect(250, 20, 241, 231));
         radioButton = new QRadioButton(groupBox);
         radioButton->setObjectName("radioButton");
         radioButton->setGeometry(QRect(20, 30, 89, 20));
@@ -125,42 +125,42 @@ public:
         label_3 = new QLabel(groupBox);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(150, 130, 71, 16));
+        lineEdit_5 = new QLineEdit(groupBox);
+        lineEdit_5->setObjectName("lineEdit_5");
+        lineEdit_5->setGeometry(QRect(30, 190, 113, 22));
+        label_7 = new QLabel(groupBox);
+        label_7->setObjectName("label_7");
+        label_7->setGeometry(QRect(150, 190, 81, 16));
         groupBox_2 = new QGroupBox(Form);
         groupBox_2->setObjectName("groupBox_2");
-        groupBox_2->setGeometry(QRect(10, 20, 231, 201));
+        groupBox_2->setGeometry(QRect(10, 20, 231, 231));
         radioButton_7 = new QRadioButton(groupBox_2);
         radioButton_7->setObjectName("radioButton_7");
         radioButton_7->setGeometry(QRect(20, 30, 89, 20));
         radioButton_8 = new QRadioButton(groupBox_2);
         radioButton_8->setObjectName("radioButton_8");
-        radioButton_8->setGeometry(QRect(10, 90, 89, 20));
+        radioButton_8->setGeometry(QRect(10, 110, 89, 20));
         lineEdit_3 = new QLineEdit(groupBox_2);
         lineEdit_3->setObjectName("lineEdit_3");
-        lineEdit_3->setGeometry(QRect(20, 110, 113, 22));
+        lineEdit_3->setGeometry(QRect(20, 130, 113, 22));
         lineEdit_4 = new QLineEdit(groupBox_2);
         lineEdit_4->setObjectName("lineEdit_4");
-        lineEdit_4->setGeometry(QRect(20, 140, 113, 22));
+        lineEdit_4->setGeometry(QRect(20, 160, 113, 22));
         label = new QLabel(groupBox_2);
         label->setObjectName("label");
-        label->setGeometry(QRect(140, 140, 61, 16));
+        label->setGeometry(QRect(140, 160, 61, 16));
         label_2 = new QLabel(groupBox_2);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(140, 110, 71, 16));
+        label_2->setGeometry(QRect(140, 130, 71, 16));
         radioButton_12 = new QRadioButton(groupBox_2);
         radioButton_12->setObjectName("radioButton_12");
         radioButton_12->setGeometry(QRect(20, 50, 101, 20));
         radioButton_13 = new QRadioButton(groupBox_2);
         radioButton_13->setObjectName("radioButton_13");
         radioButton_13->setGeometry(QRect(20, 70, 171, 20));
-        label_7 = new QLabel(groupBox_2);
-        label_7->setObjectName("label_7");
-        label_7->setGeometry(QRect(140, 170, 81, 16));
-        lineEdit_5 = new QLineEdit(groupBox_2);
-        lineEdit_5->setObjectName("lineEdit_5");
-        lineEdit_5->setGeometry(QRect(20, 170, 113, 22));
         groupBox_3 = new QGroupBox(Form);
         groupBox_3->setObjectName("groupBox_3");
-        groupBox_3->setGeometry(QRect(10, 250, 481, 391));
+        groupBox_3->setGeometry(QRect(10, 320, 481, 391));
         groupBox_4 = new QGroupBox(groupBox_3);
         groupBox_4->setObjectName("groupBox_4");
         groupBox_4->setGeometry(QRect(20, 30, 441, 171));
@@ -267,6 +267,7 @@ public:
         radioButton_11->setText(QCoreApplication::translate("Form", "Own", nullptr));
         label_4->setText(QCoreApplication::translate("Form", "Mass [Yg]", nullptr));
         label_3->setText(QCoreApplication::translate("Form", "Radius [km]", nullptr));
+        label_7->setText(QCoreApplication::translate("Form", "Distance [AU]", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("Form", "Center object", nullptr));
         radioButton_7->setText(QCoreApplication::translate("Form", "Sun", nullptr));
         radioButton_8->setText(QCoreApplication::translate("Form", "Own", nullptr));
@@ -274,7 +275,6 @@ public:
         label_2->setText(QCoreApplication::translate("Form", "Radius [km]", nullptr));
         radioButton_12->setText(QCoreApplication::translate("Form", "Sagittarius A*", nullptr));
         radioButton_13->setText(QCoreApplication::translate("Form", "Proxima Centauri System", nullptr));
-        label_7->setText(QCoreApplication::translate("Form", "Distance [AU]", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("Form", "Results", nullptr));
         groupBox_4->setTitle(QCoreApplication::translate("Form", "First cosmic velocity (orbital velocity)", nullptr));
         label_5->setText(QCoreApplication::translate("Form", "km above the object surface:", nullptr));
@@ -309,4 +309,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // WIDGETUYKKYQ_H
+#endif // WIDGETGPKUZO_H

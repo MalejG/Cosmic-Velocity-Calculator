@@ -54,6 +54,9 @@ MyWidget::MyWidget(QWidget* parent) : QWidget(parent)
 	connect(ui.lineEdit_2, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);
 	connect(ui.lineEdit_3, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedCenterObject);
 	connect(ui.lineEdit_4, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedCenterObject);
+	connect(ui.lineEdit_5, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);// distance AU
+	connect(ui.lineEdit_6, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);// Altitude
+
 }
 
 
@@ -80,17 +83,15 @@ void MyWidget::onRadioButtonSelectedCenterObject()
 	}
 	else if (ui.radioButton_8->isChecked())
 	{
-		bool isFilled1, isFilled2, isFilled3;
+		bool isFilled1, isFilled2;
 		double massValue = ui.lineEdit_3->text().toDouble(&isFilled1);
 		double radiusValue = ui.lineEdit_4->text().toDouble(&isFilled2);
-		double distanceValue = ui.lineEdit_4->text().toDouble(&isFilled3);
 
-		if (isFilled1 && isFilled2 && isFilled3)
+		if (isFilled1 && isFilled2)
 		{
 			cout << "Own";
 			*massCenter = massValue;
 			*radiusCenter = radiusValue;
-			*distanceObjects = distanceValue;
 		}
 	}
 }
@@ -160,14 +161,18 @@ void MyWidget::onRadioButtonSelectedObject()
 
 	else if (ui.radioButton_11->isChecked())
 	{
-		bool isFilled1, isFilled2;
+		bool isFilled1, isFilled2, isFilled3;
 		double massValue = ui.lineEdit->text().toDouble(&isFilled1);
 		double radiusValue = ui.lineEdit_2->text().toDouble(&isFilled2);
+		double distanceValue = ui.lineEdit_5->text().toDouble(&isFilled3);
+
 		if (isFilled1 && isFilled2)
 		{
 			cout << "Own";
 			*mass = massValue;
 			*radius = radiusValue;
+			*distanceObjects = distanceValue;
+
 		}
 	}
 }
