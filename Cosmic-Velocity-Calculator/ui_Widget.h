@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'WidgetGPkuZo.ui'
+** Form generated from reading UI file 'WidgetLxdDct.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.8.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef WIDGETGPKUZO_H
-#define WIDGETGPKUZO_H
+#ifndef WIDGETLXDDCT_H
+#define WIDGETLXDDCT_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -79,7 +79,7 @@ public:
     {
         if (Form->objectName().isEmpty())
             Form->setObjectName("Form");
-        Form->resize(501, 723);
+        Form->resize(506, 723);
         pushButton = new QPushButton(Form);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(170, 270, 158, 24));
@@ -166,58 +166,59 @@ public:
         groupBox_4->setGeometry(QRect(20, 30, 441, 171));
         label_5 = new QLabel(groupBox_4);
         label_5->setObjectName("label_5");
-        label_5->setGeometry(QRect(130, 50, 171, 16));
+        label_5->setGeometry(QRect(130, 80, 171, 16));
         label_5->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_6 = new QLabel(groupBox_4);
         label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(130, 70, 171, 16));
+        label_6->setGeometry(QRect(130, 100, 171, 16));
         label_6->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_500 = new QLabel(groupBox_4);
         label_500->setObjectName("label_500");
-        label_500->setGeometry(QRect(60, 70, 51, 16));
+        label_500->setGeometry(QRect(60, 100, 51, 16));
         label_500->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_200 = new QLabel(groupBox_4);
         label_200->setObjectName("label_200");
-        label_200->setGeometry(QRect(60, 50, 51, 16));
+        label_200->setGeometry(QRect(60, 80, 51, 16));
         label_200->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_5000 = new QLabel(groupBox_4);
         label_5000->setObjectName("label_5000");
-        label_5000->setGeometry(QRect(60, 90, 51, 16));
+        label_5000->setGeometry(QRect(60, 120, 51, 16));
         label_5000->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_14 = new QLabel(groupBox_4);
         label_14->setObjectName("label_14");
-        label_14->setGeometry(QRect(130, 90, 171, 16));
+        label_14->setGeometry(QRect(130, 120, 171, 16));
         label_14->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_15 = new QLabel(groupBox_4);
         label_15->setObjectName("label_15");
-        label_15->setGeometry(QRect(130, 110, 171, 16));
+        label_15->setGeometry(QRect(130, 140, 171, 16));
         label_15->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_10000 = new QLabel(groupBox_4);
         label_10000->setObjectName("label_10000");
-        label_10000->setGeometry(QRect(60, 110, 51, 16));
+        label_10000->setGeometry(QRect(60, 140, 51, 16));
         label_10000->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_17 = new QLabel(groupBox_4);
         label_17->setObjectName("label_17");
-        label_17->setGeometry(QRect(130, 130, 171, 16));
+        label_17->setGeometry(QRect(130, 60, 171, 16));
         label_17->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_19 = new QLabel(groupBox_4);
         label_19->setObjectName("label_19");
-        label_19->setGeometry(QRect(350, 50, 81, 16));
+        label_19->setGeometry(QRect(330, 80, 111, 16));
         label_20 = new QLabel(groupBox_4);
         label_20->setObjectName("label_20");
-        label_20->setGeometry(QRect(350, 70, 81, 16));
+        label_20->setGeometry(QRect(330, 100, 111, 16));
         label_21 = new QLabel(groupBox_4);
         label_21->setObjectName("label_21");
-        label_21->setGeometry(QRect(350, 90, 81, 16));
+        label_21->setGeometry(QRect(330, 120, 111, 16));
         label_22 = new QLabel(groupBox_4);
         label_22->setObjectName("label_22");
-        label_22->setGeometry(QRect(350, 110, 81, 16));
+        label_22->setGeometry(QRect(330, 140, 111, 16));
         label_23 = new QLabel(groupBox_4);
         label_23->setObjectName("label_23");
-        label_23->setGeometry(QRect(350, 130, 81, 16));
+        label_23->setGeometry(QRect(330, 60, 111, 16));
         lineEdit_6 = new QLineEdit(groupBox_4);
         lineEdit_6->setObjectName("lineEdit_6");
-        lineEdit_6->setGeometry(QRect(40, 130, 71, 22));
+        lineEdit_6->setGeometry(QRect(40, 60, 71, 22));
+        lineEdit_6->setLayoutDirection(Qt::LayoutDirection::RightToLeft);
         label_201 = new QLabel(groupBox_4);
         label_201->setObjectName("label_201");
         label_201->setGeometry(QRect(70, 30, 51, 16));
@@ -231,7 +232,7 @@ public:
         label_8->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_11 = new QLabel(groupBox_5);
         label_11->setObjectName("label_11");
-        label_11->setGeometry(QRect(350, 30, 71, 20));
+        label_11->setGeometry(QRect(330, 30, 111, 20));
         groupBox_6 = new QGroupBox(groupBox_3);
         groupBox_6->setObjectName("groupBox_6");
         groupBox_6->setGeometry(QRect(20, 280, 441, 71));
@@ -241,7 +242,7 @@ public:
         label_9->setAlignment(Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter);
         label_24 = new QLabel(groupBox_6);
         label_24->setObjectName("label_24");
-        label_24->setGeometry(QRect(350, 30, 61, 20));
+        label_24->setGeometry(QRect(330, 30, 111, 20));
         pushButton_2 = new QPushButton(groupBox_3);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(300, 360, 158, 24));
@@ -294,10 +295,10 @@ public:
         label_201->setText(QCoreApplication::translate("Form", "Altitude", nullptr));
         groupBox_5->setTitle(QCoreApplication::translate("Form", "Second cosmic velocity (escape velocity)", nullptr));
         label_8->setText(QCoreApplication::translate("Form", "Min. escape velocity from surface of the object:", nullptr));
-        label_11->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
+        label_11->setText(QCoreApplication::translate("Form", "0.00 km/s", nullptr));
         groupBox_6->setTitle(QCoreApplication::translate("Form", "Third cosmic velocity (solar system escape velocity)", nullptr));
         label_9->setText(QCoreApplication::translate("Form", "Min. system escape velocity from object surface:", nullptr));
-        label_24->setText(QCoreApplication::translate("Form", "0.0 km/s", nullptr));
+        label_24->setText(QCoreApplication::translate("Form", "0.00 km/s", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Form", "Export data", nullptr));
     } // retranslateUi
 
@@ -309,4 +310,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // WIDGETGPKUZO_H
+#endif // WIDGETLXDDCT_H

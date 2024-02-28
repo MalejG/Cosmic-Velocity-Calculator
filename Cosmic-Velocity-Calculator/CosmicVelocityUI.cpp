@@ -42,19 +42,22 @@ MyWidget::MyWidget(QWidget* parent) : QWidget(parent)
 	connect(ui.radioButton_4, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); //Mars
 	connect(ui.radioButton_5, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); //Jupiter
 	connect(ui.radioButton_6, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); //Saturn
-	connect(ui.radioButton_7, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedCenterObject); //sun
-	connect(ui.radioButton_8, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedCenterObject); // own center
 	connect(ui.radioButton_9, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); //Uranus
 	connect(ui.radioButton_10, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); //Neptun
 	connect(ui.radioButton_11, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); // own planet
+
+
+	connect(ui.radioButton_7, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedCenterObject); //sun
+	connect(ui.radioButton_8, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedCenterObject); // own center
 	connect(ui.radioButton_12, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedCenterObject); // Sagitaruis
 	connect(ui.radioButton_13, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedCenterObject); // PROXIMA
 
-	connect(ui.lineEdit, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);
-	connect(ui.lineEdit_2, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);
 	connect(ui.lineEdit_3, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedCenterObject);
 	connect(ui.lineEdit_4, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedCenterObject);
-	connect(ui.lineEdit_5, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);// distance AU
+
+	connect(ui.lineEdit, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);
+	connect(ui.lineEdit_2, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);
+	connect(ui.lineEdit_5, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);
 	connect(ui.lineEdit_6, &QLineEdit::textChanged, this, &MyWidget::onRadioButtonSelectedObject);// Altitude
 
 }
@@ -84,8 +87,8 @@ void MyWidget::onRadioButtonSelectedCenterObject()
 	else if (ui.radioButton_8->isChecked())
 	{
 		bool isFilled1, isFilled2;
-		double massValue = ui.lineEdit_3->text().toDouble(&isFilled1);
-		double radiusValue = ui.lineEdit_4->text().toDouble(&isFilled2);
+		double massValue = ui.lineEdit_4->text().toDouble(&isFilled1);
+		double radiusValue = ui.lineEdit_3->text().toDouble(&isFilled2);
 
 		if (isFilled1 && isFilled2)
 		{
@@ -95,8 +98,6 @@ void MyWidget::onRadioButtonSelectedCenterObject()
 		}
 	}
 }
-
-
 
 
 void MyWidget::onRadioButtonSelectedObject()
@@ -162,11 +163,11 @@ void MyWidget::onRadioButtonSelectedObject()
 	else if (ui.radioButton_11->isChecked())
 	{
 		bool isFilled1, isFilled2, isFilled3;
-		double massValue = ui.lineEdit->text().toDouble(&isFilled1);
-		double radiusValue = ui.lineEdit_2->text().toDouble(&isFilled2);
+		double massValue = ui.lineEdit_2->text().toDouble(&isFilled1);
+		double radiusValue = ui.lineEdit->text().toDouble(&isFilled2);
 		double distanceValue = ui.lineEdit_5->text().toDouble(&isFilled3);
 
-		if (isFilled1 && isFilled2)
+		if (isFilled1 && isFilled2 && isFilled3)
 		{
 			cout << "Own";
 			*mass = massValue;
@@ -180,19 +181,54 @@ void MyWidget::onRadioButtonSelectedObject()
 
 void MyWidget::onCalculateButtonClicked()
 {
+
 	//FirstCosmicVelocity
 	constexpr size_t n = 5;
-	double orbits[n] = { 200, 500, 5000, 10000, 100000 };
+	double userAltitude;
+	
+	bool ok;
+	userAltitude = ui.lineEdit_6->text().toDouble(&ok);
 
-	ui.label_19->setText(QString::number(firstCosmicVelocity(*mass, *radius, &orbits[0]), 'f', 2) + " km/s");
-	ui.label_20->setText(QString::number(firstCosmicVelocity(*mass, *radius, &orbits[1]), 'f', 2) + " km/s");
-	ui.label_21->setText(QString::number(firstCosmicVelocity(*mass, *radius, &orbits[2]), 'f', 2) + " km/s");
-	ui.label_22->setText(QString::number(firstCosmicVelocity(*mass, *radius, &orbits[3]), 'f', 2) + " km/s");
-	ui.label_23->setText(QString::number(firstCosmicVelocity(*mass, *radius, &orbits[4]), 'f', 2) + " km/s");
+	if (!ok) 
+	{
+		userAltitude = 0;
+	}
+
+	double orbits[n] = { 200, 500, 5000, 10000, userAltitude };
+	QLabel* qtlabels[n] = { ui.label_19, ui.label_20, ui.label_21, ui.label_22, ui.label_23 };
+	
+	for (size_t i = 0; i < n; ++i) 
+	{
+		double velocity = firstCosmicVelocity(*mass, *radius, &orbits[i]);
+		if (velocity == -1) {
+			qtlabels[i]->setText("Exceeds light limit");
+		}
+		else {
+			qtlabels[i]->setText(QString::number(velocity, 'f', 2) + " km/s");
+		}
+	}
 
 	//SecondCosmicVelocity
-	ui.label_11->setText(QString::number(secondCosmicVelocity(*mass, *radius), 'f', 2) + " km/s");
+	double secondVelocity = secondCosmicVelocity(*mass, *radius);
+	
+	if (secondVelocity == -1) 
+	{
+		ui.label_11->setText("Exceeds light limit");
+	}
+	else 
+	{
+		ui.label_11->setText(QString::number(secondVelocity, 'f', 2) + " km/s");
+	}
+	
 	//ThirdCosmicVelocity
-	ui.label_24->setText(QString::number(thirdCosmicVelocity(*mass, *radius, *massCenter, *radiusCenter, *distanceObjects), 'f', 2) + " km/s");
+	double thirdVelocity = thirdCosmicVelocity(*mass, *radius, *massCenter, *radiusCenter, *distanceObjects);
+	
+	if (thirdVelocity == -1) 
+	{
+		ui.label_24->setText("Exceeds light limit");
+	}
+	else 
+	{
+		ui.label_24->setText(QString::number(thirdVelocity, 'f', 2) + " km/s");
+	}
 }
-
