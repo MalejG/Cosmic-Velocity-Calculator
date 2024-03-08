@@ -1,0 +1,13 @@
+
+First Cosmic Velocity
+200km  7.78554 km/s
+500km  7.61385 km/s
+5000km  5.91974 km/s
+10000km  4.93407 km/s
+5000km  5.91974 km/s
+
+Second Cosmic Velocity
+11.1817 km/s
+
+Third Cosmic Velocity
+27903.9 km/s

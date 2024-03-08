@@ -1,9 +1,10 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
+#include <fstream>
+
 #include "CosmicVelocityCalculator.h"
 
 using namespace std;
-
 
 double firstCosmicVelocity(double mass, double radiusObject,const double *orbit)
 {
@@ -61,7 +62,60 @@ double speedOfLightControl(double speed)
     }
 }
 
-void exportData()
+
+//pridat nazev
+void exportData( double mass1, double radiusObject1, size_t n, const double Orbit[], double massCenterObject2, double radiusCenterObject2, double AU)
 {
-    cout << "Data saved in file xy";
+
+
+    ofstream myfile;
+    myfile.open("cosmicVelocityDataExport.txt");
+
+    //firstCosmicVelocity
+    myfile << "\nFirst Cosmic Velocity\n";
+    for (size_t i = 0; i < n; ++i)
+    {
+        double v1 = firstCosmicVelocity(mass1, radiusObject1, &Orbit[i]);
+        cout << Orbit[i] << " " << i << "\n";
+
+        if (v1 == -1)
+        {
+            myfile << Orbit[i] << "km  " << " Exceeds light limit";
+        }
+        else
+        {
+            myfile << Orbit[i] << "km  " << v1 << " km/s\n";
+        }
+    }
+
+    //secondCosmicVelocity
+    myfile << "\nSecond Cosmic Velocity\n";
+    double v2 = secondCosmicVelocity(mass1, radiusObject1);
+
+    if (v2 == -1) 
+    {
+        myfile << "Exceeds light limit";
+    }
+    else
+    {
+        myfile << v2 << " km/s\n";
+    }
+
+    //ThirdCosmicVelocity
+    myfile << "\nThird Cosmic Velocity\n";
+    double v3 = thirdCosmicVelocity(mass1, radiusObject1, massCenterObject2, radiusCenterObject2, AU);
+
+
+    if (v3 == -1) 
+    {
+        myfile << "Exceeds light limit";
+    }
+    else 
+    {
+        myfile << v3 << " km/s\n";
+    }
+
+    myfile.close();
+    cout << "Data written in file";
+
 }

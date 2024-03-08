@@ -17,6 +17,7 @@ private slots:
 	void onCalculateButtonClicked();
 	void onRadioButtonSelectedCenterObject();
 	void onRadioButtonSelectedObject();
+	void exportDataClicked();
 
 private:
 	Ui::Form ui;

@@ -16,6 +16,12 @@ double* distanceObjects;
 double* mass;
 double* radius;
 
+double userAltitude = 0;
+
+constexpr size_t n = 5;
+
+double orbits[n] = { 200, 500, 5000, 10000, userAltitude };
+
 
 MyWidget::MyWidget(QWidget* parent) : QWidget(parent)
 {
@@ -35,6 +41,8 @@ MyWidget::MyWidget(QWidget* parent) : QWidget(parent)
 	*radiusCenter = 0.0;
 
 	connect(ui.pushButton, &QPushButton::clicked, this, &MyWidget::onCalculateButtonClicked);
+	connect(ui.pushButton_2, &QPushButton::clicked, this, &MyWidget::exportDataClicked);
+
 
 	connect(ui.radioButton, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); //Mercury
 	connect(ui.radioButton_2, &QRadioButton::toggled, this, &MyWidget::onRadioButtonSelectedObject); //Venus
@@ -183,18 +191,11 @@ void MyWidget::onCalculateButtonClicked()
 {
 
 	//FirstCosmicVelocity
-	constexpr size_t n = 5;
-	double userAltitude;
-	
-	bool ok;
-	userAltitude = ui.lineEdit_6->text().toDouble(&ok);
 
-	if (!ok) 
-	{
-		userAltitude = 0;
-	}
+	userAltitude = ui.lineEdit_6->text().toDouble();
+	orbits[4] = userAltitude;
 
-	double orbits[n] = { 200, 500, 5000, 10000, userAltitude };
+
 	QLabel* qtlabels[n] = { ui.label_19, ui.label_20, ui.label_21, ui.label_22, ui.label_23 };
 	
 	for (size_t i = 0; i < n; ++i) 
@@ -231,4 +232,9 @@ void MyWidget::onCalculateButtonClicked()
 	{
 		ui.label_24->setText(QString::number(thirdVelocity, 'f', 2) + " km/s");
 	}
+}
+
+void MyWidget::exportDataClicked()
+{
+	exportData(*mass, *radius, n, orbits, *massCenter, *radiusCenter, *distanceObjects);
 }

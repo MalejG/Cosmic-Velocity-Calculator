@@ -14,6 +14,6 @@ double thirdCosmicVelocity(double massObject1, double radiusObject1, double mass
 
 double speedOfLightControl(double speed);
 
-void exportData();
+void exportData(double mass1, double radiusObject1, size_t n, const double Orbit[], double massCenterObject2, double radiusCenterObject2, double AU);
 
 #endif //__COSMICVELOCITYCALCULATOR_h__
