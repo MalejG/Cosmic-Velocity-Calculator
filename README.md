@@ -5,9 +5,9 @@ The Cosmic Velocity Calculator is a C++ application to calculate the first, seco
 
 ## Features
 
-  ✔  Calculate the first, second, and third cosmic velocities.
-  ✔  GUI with Qt.
-  ✔  Export calculated data.
+ - ✔  Calculate the first, second, and third cosmic velocities.
+ - ✔  GUI with Qt.
+ - ✔  Export calculated data.
 
     
 ## License
